@@ -1,7 +1,7 @@
 import React from "react";
 
 
-const Car = ({children, color}) => {
+const Car = ({children, color,year}) => {
 
     //si nous avons colors nous aurons quelque chose sinon on retournera Neant
     const colorInfo = color ? (<p>Couleur: { color }</p>) : (<p>Couleur: Néant</p>);
@@ -10,25 +10,22 @@ const Car = ({children, color}) => {
         return (
         <div className="cars">
         <p>Marque: { children }</p>
+        <p>Année: {year}</p>
         { colorInfo}
         
         </div>
     )
 }else{
     
-    return(
-      
-        <div className="cars">
-            <p>Pa de data disponible</p>
-        </div>
-    ) 
+    return null;
+    // ( 
+    
+    //     <div className="cars">
+    //         <p>Pa de data disponible</p>
+    //     </div>
+    // ) 
 }
     
-    
-    
-    
-    
-
 }
 
 export default Car

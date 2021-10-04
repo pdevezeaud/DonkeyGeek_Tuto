@@ -8,37 +8,37 @@ class App extends Component {
     titre: "Mon catalogue Voitures"
 }
 
-changeTitle = (e) => {
-    //console.log(e);
-    //on ne peut modifier un state sans passer par setstate
+// changeTitle = (e) => {
+//     //console.log(e);
+//     //on ne peut modifier un state sans passer par setstate
     
-    this.setState({
-      titre: "Mon nouveau titre"
-    })
-}
+//     this.setState({
+//       titre: "Mon nouveau titre"
+//     })
+// }
 
 
 
-changeParamTitle = (titre) => {
-  this.setState({
+// changeParamTitle = (titre) => {
+//   this.setState({
 
-    titre: titre
-  })
-}
+//     titre: titre
+//   })
+// }
 
-changeViaBind = (param) => {
-  this.setState({
-    titre:param
-  })
-}
+// changeViaBind = (param) => {
+//   this.setState({
+//     titre:param
+//   })
+// }
 
 
-changeViaInput = (e) => {
+// changeViaInput = (e) => {
   
-  this.setState({
-    titre: e.target.value
-  })
-}
+//   this.setState({
+//     titre: e.target.value
+//   })
+// }
 
 
 
@@ -48,10 +48,10 @@ changeViaInput = (e) => {
         
           <Mycars title={this.state.titre} />
 
-          <button onClick={this.changeTitle}>Changer le titre en dur</button>
+          {/* <button onClick={this.changeTitle}>Changer le titre en dur</button>
           <button onClick={() => this.changeParamTitle('Titre via un param')}>Changer le titre avec param</button>
           <button onClick={this.changeViaBind.bind(this, 'Titre avec Bind')}>Changer le titre avec Bind</button>
-          <input type="text" onChange={this.changeViaInput} value={this.state.titre} />   
+          <input type="text" onChange={this.changeViaInput} value={this.state.titre} />    */}
       </div>
     );
 
