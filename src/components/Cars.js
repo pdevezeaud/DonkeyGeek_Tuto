@@ -10,7 +10,7 @@ const Car = ({children, color,year}) => {
         return (
         <div className="cars">
         <p>Marque: { children }</p>
-        <p>Année: {year}</p>
+        <p>Age: {year}</p>
         { colorInfo}
         
         </div>
