@@ -1,16 +1,16 @@
 import React from "react";
 
 
-const Car = ({children, color,year}) => {
+const Car = ({color, nom,year}) => {
 
     //si nous avons colors nous aurons quelque chose sinon on retournera Neant
     const colorInfo = color ? (<p>Couleur: { color }</p>) : (<p>Couleur: Néant</p>);
     
-    if (children) {
+    if (nom) {
         return (
         <div className="cars">
-        <p>Marque: { children }</p>
-        <p>Age: {year}</p>
+        <p>Marque: { nom }</p>
+        <p>Age du vehicule: {year}</p>
         { colorInfo}
         
         </div>

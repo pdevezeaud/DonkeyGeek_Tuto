@@ -1,2 +1,10 @@
 https://www.youtube.com/watch?v=6qAIQ_ItZn4&list=PLmYBIzXGbEzLhBgbGa7ucqGJr5RgmzjWr&index=9
 7:08
+
+Pour modifier un state il faut passer par setState
+
+<Car color={this.state.voitures[0].color} year ={year - this.state.voitures[0].year + ' ans'}>{this.state.voitures[0].name}</Car>
+<Car color={this.state.voitures[1].color} year ={year - this.state.voitures[1].year + ' ans'}>{this.state.voitures[1].name}</Car>
+<Car color={this.state.voitures[2].color} year ={year - this.state.voitures[2].year + ' ans'}>{this.state.voitures[2].name}</Car>
+
+methode map
